@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se trae un tipo de letrade google font llamada LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/logo/icono.ico">
+    <!-- se linkea el CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>COMERCIO ERRATICO</title>
+</head>
+<body>
+   <!-- header con logo y carrito -->
+    <header>
+         <div><a href="../index.html"><img class="logo" src="../img/logo/logocomerciohorizontal.png" alt=""></a>
+    </div>
+        <nav>
+            <a href="../index.html"><img id="tienda" src="../img/iconos/tienda.png" alt=""></a>
+        </nav>
+    </header>
+
+     <h1 class="titleCarrito"> Carrito de compras</h1>
+    
+     <!-- contenedor principal -->
+    <div class="content-cart" id="content"></div>
+    
+    <!-- agregue footer en la posicion sticky para que el total este siempre visible -->
+    <footer>
+            <div class="msgtotal"><h1>TOTAL: </h1><h1 id="totalprice"> </h1></div>
+            <a class="a-finish" href="./payment.html"><button class="btn-finish">Finalizar Compra</button></a>      
+    </footer>
+<script type="module" src="../js/carrito.js"></script>
+</body>
+</html>

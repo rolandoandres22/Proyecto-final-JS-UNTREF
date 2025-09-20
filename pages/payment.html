@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/logo/icono.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/payment.css">
+    <title>COMERCIO ERRATICO</title>
+</head>
+<body>
+   <!-- header con logo y carrito -->
+    <header>
+        <div><a href="../index.html"><img class="logo" src="../img/logo/logocomerciohorizontal.png" alt=""></a></div>
+        <nav>
+            <a href="../index.html"><img id="tienda" class="menu" src="../img/iconos/tienda.png" alt=""></a>
+            <a href="../pages/carrito.html"><img id="carrito" class="menu" src="../img/iconos/compras.png" alt=""></a>
+        </nav>
+    </header>
+
+    <!-- contenedor principal -->
+    <h1 class="titleCarrito">Métodos de Pago</h1>
+    <div class="content-payment" id="content">
+        <!-- dividi en 2 secciones a la izquierda el resumen de compra y a la derecha los metodos de pago -->
+        <div class="summary-cart" id="content-summary"></div>
+        <div class="payment-cart" id="content-payment"></div>
+    </div>
+    
+    <footer>
+        <div class="msgtotal"><h1>TOTAL: </h1><h1 id="totalprice"></h1></div>
+        <button class="btn-finish">Pagar</button>
+    </footer>
+    
+    <script src="../js/payment.js"></script>
+</body>
+</html>

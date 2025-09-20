@@ -1,0 +1,223 @@
+.content-cart{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.carrito-card{
+    border: 1px solid #C55B2D;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    gap: 10px;
+    align-items: center;
+}
+.cart-img{
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-eliminar {
+  display: flex;
+  background: linear-gradient(135deg, #fb3636 0%, #e08760 100%);
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-left: 15px;
+  background-color: #C55B2D;
+  color: #fff;
+  align-items: center;
+}
+.btn-eliminar:hover {
+  box-shadow: 0 5px 15px #c55b2d6f;
+  transform: translateY(-2px);
+}
+/* controles de cantidad - 1 + */
+.quantity-controls2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background: transparent;
+    border-radius: 10px;
+}    
+.quantity-label2 {
+    margin-right: 15px;
+    font-weight: 600;
+}
+.quantity-btn2 {
+    background: #e0e6ed;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.quantity-btn2:hover {
+    background: #C55B2D;
+    color: white;
+}   
+.quantity-value2 {
+    margin: 0 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+.btn-actualizar{
+  display: flex;
+  background: linear-gradient(135deg, #c0c022 0%, #e08760 100%);
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-left: 15px;
+  background-color: #C55B2D;
+  color: #fff;
+  align-items: center;
+}
+.act-ico{
+  background: transparent;
+  color: grey;
+  width: 20px;
+  margin-right: 10px;
+}
+.btn-actualizar:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px #c55b2d6f;
+}
+
+.btn-finish{
+  display: block;
+    width: 250px;
+    height: auto;
+    padding: 11px 16px;
+    background: linear-gradient(135deg, #C55B2D 0%, #e08760 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-finish:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px #c55b2d6f;
+}
+.btn-carrito{
+  background-color: transparent;
+  color: #fff;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    background-color: #c55b2d29;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal p{
+  margin: 10px;
+}
+.cancelar-btn{
+    padding: 12px 25px;
+    background: #faf9f8;
+    border: 2px solid #C55B2D;
+    color: #C55B2D;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    background: #f8f9fa;  
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;        
+}
+.cancelar-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #c55b2d6f;
+}
+.eliminar-btn{
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #C55B2D 0%, #e08760 100%);
+    color: white;
+    border: none;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.eliminar-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #c55b2d6f; 
+}
+.like{
+  width: 60px;
+  height: 60px;
+}
+.a-finish{
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .carrito-card{
+    padding: 15px 5px;
+    flex-direction: column;
+  }
+/* .btn-carrito{
+  display: none;
+} */
+/* .act-ico{
+margin-right: 0px;
+}
+.quantity-controls2 {
+    display: flex;
+      align-items: center;
+    margin: 0;
+    background: transparent;
+    border-radius: 10px;
+}    
+.quantity-label2 {
+    margin-right: 5px;
+    font-weight: 500;
+}
+.quantity-btn2 {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+} 
+  
+.quantity-value2 {
+    margin: 0 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 30px;
+} */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- se trae un tipo de letrade google font llamada LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logo/icono.ico">
+    <!-- se linkea el CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>COMERCIO ERRATICO</title>
+</head>
+<body>
+
+   <!-- header con logo y carrito -->
+    <header>
+         <div><a href="./index.html"><img class="logo" src="./img/logo/logocomerciohorizontal.png" alt=""></a>
+    </div>
+        <nav>
+            <a href="./pages/carrito.html"><img id="carrito" src="./img/iconos/compras.png" alt=""></a>
+        </nav>
+    </header>
+    <!-- contenedor principal -->
+    <div class="content" id="content"></div>
+
+    <!-- se linkea el archivo js principal, se pone type module porque asi puedo modularizar -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
