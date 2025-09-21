@@ -12,7 +12,7 @@ font-family:  "Lato", sans-serif;
 header {
   display: flex; 
   justify-content: space-between; 
-  align-items: center; /* centra los elementos verticalmente */
+  align-items: center; /* centra los elementos verticalmente y nunca me lo acuerdo :( */
   padding: 1px;
   background-color: #FCFCFD;
   position: sticky;
@@ -106,7 +106,7 @@ footer {
      justify-content: space-around;
      align-items: center;
       bottom: 0;
-      padding: 20px;
+      /* padding-top: 20px; */
       position: sticky;
     }
 
@@ -128,7 +128,7 @@ footer {
 @media (max-width: 768px) {
 
   .logo {
-  height: 90px; 
+  height: 85px; 
   max-width: 100%;
 }
 #carrito {
